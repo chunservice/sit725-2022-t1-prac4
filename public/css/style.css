@@ -1,5 +1,9 @@
+.nav-wrapper {
+    background-color: #c56e6e;
+    }
+
 .navbar-size {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     }
 
@@ -9,7 +13,7 @@
     }
     
 .main-body {
-    background-color: #F28487;
+    background-color: #c98686;
     color: white;
     height: calc(100vh - 64px);
     }
@@ -20,6 +24,6 @@
     }
 
 .click-me-button {
-    background-color: #EE6E73;
+    background-color: #751111;
     margin-top: 50px;
     }

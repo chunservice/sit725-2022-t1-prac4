@@ -1,27 +1,19 @@
-const cardList = [    
-    {
-        title: "Orange",
-        image: "images/orange_cut.png",
-        link: "About Orange",
-        description: "An orange is a fruit of various citrus species in the family Rutaceae."
-     },
-    {
-       title: "Lime",
-       image: "images/lime_cut.png",
-       link: "About Lime",
-       description: "A lime is a citrus fruit, which is typically round, green in color and contains acidic juice vesicles."
-    },
-    {
-        title: "Lemon",
-        image: "images/lemon_cut.png",
-        link: "About Lemon",
-        description: "A lemon is a species of small evergreen trees in the flowering plant family Rutaceae."
-    }
-]
-
 const clickMe = function() {
     alert("Thanks for clicking me. Hope you have a nice day!")
     }
+
+// jQuery function of getProjects. if the statusCode returning 200, use response.data into addCards. else print on console what the error is.
+const getProjects = () => {
+    $.get('/api/projects',(response) => {
+        if(response.statusCode==200){
+            console.log(response)
+            addCards(response.data);
+        }
+        else {
+            console.log(response)
+        }
+    })
+}
 
 const addCards = function(items) {
     items.forEach(item => {

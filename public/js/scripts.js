@@ -1,6 +1,32 @@
-const clickMe = function() {
+const clickMe = () => {
     alert("Thanks for clicking me. Hope you have a nice day!")
     }
+
+// ajax post function, create an alert with the message, reload the location
+const addProjectToApp = (project) => {
+    $.ajax({
+        url: '/api/projects',
+        data: project,
+        type: 'POST',
+        success: (result) => {
+            alert(result.message);
+            location.reload();
+        }
+    })
+}
+
+const submitForm = () => {
+    let formData = {};
+    formData.title = $('#title').val();
+    formData.image = $('#image').val();
+    formData.link = $('#link').val();
+    formData.description =$('#description').val();
+
+    console.log("Form Data Submitted: ", formData);
+
+    //add formData
+    addProjectToApp(formData);
+}
 
 // jQuery function of getProjects. if the statusCode returning 200, use response.data into addCards, to the cardList. else print on console what the error is.
 const getProjects = () => {
@@ -35,16 +61,4 @@ $(document).ready(function(){
         })
         getProjects();
         $('.modal').modal();
-    });
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(elems, options);
-    });
-
-    // Or with jQuery
-
-    $(document).ready(function(){
-    $('.modal').modal();
     });

@@ -49,9 +49,10 @@
                     </div>
                     
                     <div class="col s12 center-align">
-                        <a class="waves-effect waves-light btn click-me-button" id="clickMeButton"><i class="material-icons left">auto_fix_high</i>Click Me</a>                    </div>
+                        <a class="waves-effect waves-light btn click-me-button modal-trigger" id="clickMeButton" data-target="modal1"><i class="material-icons left">auto_fix_high</i>Click Me</a>                    </div>
                     </div>
                     
+                
                     <!-- adding card -->
                     <div class="row" id="card-section">
                         <div class="col s4 center-align">
@@ -68,52 +69,45 @@
                                 <p class="card-text grey-text text-darken-4">A lemon is a species of small evergreen trees in the flowering plant family Rutaceae.</p>
                                 </div>
                             </div>
-                        </div>>
+                        </div>
                     </div>                               
-
-                      <!-- Modal Trigger
-                    <div class="col s12 center-align">
-                    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-                    </div> -->
                     
                     <!-- Modal Structure -->
                     <div id="modal1" class="modal modal-fixed-footer">
                         <div class="row modal-content">
-                        <form class="col s12">
-                            <div class="row">
-                            <div class="input-field col s6">
-                                <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-                                <label for="first_name">First Name</label>
-                            </div>
-                            <div class="input-field col s6">
-                                <input id="last_name" type="text" class="validate">
-                                <label for="last_name">Last Name</label>
-                            </div>
-                            </div>
-                            <div class="row">
-                            <div class="input-field col s12">
-                                <input id="password" type="password" class="validate">
-                                <label for="password">Password</label>
-                            </div>
-                            </div>
-                            <div class="row">
-                            <div class="input-field col s12">
-                                <input id="email" type="email" class="validate">
-                                <label for="email">Email</label>
-                            </div>
-                            </div>
-                            <div class="row">
-                            <div class="input-field col s12 center-align">
-                                <a class="waves-effect waves-light btn" id="formSubmit">submit</a>
-                            </div>
-                            </div>
-                        </form>
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input placeholder="Placeholder" id="title" type="text" class="validate">
+                                        <label for="title">Title</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input id="image" type="text" class="validate">
+                                        <label for="image">Image</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="link" type="text" class="validate">
+                                        <label for="link">Link</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="description" type="text" class="validate">
+                                        <label for="description">Description</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12 center-align">
+                                        <a class="waves-effect waves-light btn" id="formSubmit">submit</a>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-            <!-- card section -->
-                <div class="row" id="card-section">
-                </div>
+
             </div>
         </main>
             

@@ -19,12 +19,6 @@ const cardList = [
        link: "About Lime",
        description: "A lime is a citrus fruit, which is typically round, green in color and contains acidic juice vesicles."
     },
-    {
-        title: "Lemon",
-        image: "images/lemon_cut.png",
-        link: "About Lemon",
-        description: "A lemon is a species of small evergreen trees in the flowering plant family Rutaceae."
-    }
 ]
 
 // get API returning statusCode,cardList data and message 

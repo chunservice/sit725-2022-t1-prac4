@@ -33,6 +33,7 @@ $(document).ready(function(){
         $('#formSubmit').click(()=>{
             submitForm();
         })
+        getProjects();
         $('.modal').modal();
     });
 

@@ -27,6 +27,11 @@ const cardList = [
     }
 ]
 
+// get API returning statusCode,cardList data and message 
+app.get('/api/projects',(req,res) =>{
+    res.json({statusCode: 200, data: cardList, message:"Success"})
+})
+
 // define the port as 3000
 var port = process.env.port || 3000;
 

@@ -2,7 +2,7 @@ const clickMe = function() {
     alert("Thanks for clicking me. Hope you have a nice day!")
     }
 
-// jQuery function of getProjects. if the statusCode returning 200, use response.data into addCards. else print on console what the error is.
+// jQuery function of getProjects. if the statusCode returning 200, use response.data into addCards, to the cardList. else print on console what the error is.
 const getProjects = () => {
     $.get('/api/projects',(response) => {
         if(response.statusCode==200){
@@ -30,10 +30,10 @@ const addCards = function(items) {
 
 $(document).ready(function(){
         $('.materialboxed').materialbox();
-        $('#clickMeButton').click(()=>{
-            clickMe();
+        $('#formSubmit').click(()=>{
+            submitForm();
         })
-        addCards(cardList);
+        $('.modal').modal();
     });
 
 
